@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="font-manrope bg-darkBlue">
+
+  <section id="page">
+    <div class="container mx-auto flex h-screen items-center justify-center flex-col">
+      
+
+      <div class="max-w-96 min-h-24 bg-grayishBlue text-white text-center p-5 rounded-md shadow-2xl">
+        <div class="advise pb-3 text-neonGreen font-semibold">
+          Advice #<span id="adviseID"></span> 
+        </div>
+
+        <span class="font-semibold">
+          "<span id="quote">
+          
+          </span>"
+        </span>
+        
+        
+        
+        <!-- pattern divider -->
+         <div class="hidden md:flex mt-8 mb-4 ">
+          <div>
+            <img src="./assets/images/pattern-divider-desktop.svg" alt=" pattern-divider-desktop">
+           </div>
+         </div>
+         
+         <div class="md:hidden flex mt-6 mb-5">
+          <div>
+            <img src="./assets/images/pattern-divider-desktop.svg" alt=" pattern-divider-mobilr">
+           </div> 
+         </div>
+      </div>
+
+      <!-- shuffle btn -->
+      <!-- <div class="-mt-6 rounded-full bg-neonGreen p-4">
+        <img src="./assets/images/icon-dice.svg" alt="dice" class="w-5">
+      </div> -->
+
+      <button class="-mt-6 rounded-full bg-neonGreen p-4" onclick="generateAdvice()">
+        <img src="./assets/images/icon-dice.svg" alt="dice">
+      </button>
+    </div>
+  </section>
+ 
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

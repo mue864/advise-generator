@@ -1,0 +1,12 @@
+{
+
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./assets/css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./assets/css/main.css --watch"
+
+  },
+
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
